@@ -83,7 +83,11 @@ public:
         {
         case PLUS: return left + right;
         case MINUS: return left - right;
-        case DIV: return left / right;
+        case DIV: 
+        {
+            assert(right != 0);
+            return left / right;
+        }
         case MUL: return left * right;
         }
     }
@@ -132,7 +136,10 @@ public:
     virtual double evaluate() const
     { // реализация виртуального метода «вычислить»
         if (name_ == "sqrt")
+        {
+            assert(arg_->evaluate() >= 0);
             return sqrt(arg_->evaluate()); // либо вычисляем корень квадратный
+        }
         else return fabs(arg_->evaluate());
     } // либо модуль — остальные функции запрещены
 
@@ -247,14 +254,10 @@ struct FoldConstants : Transformer
     }
     Expression* transformBinaryOperation(BinaryOperation const* binop)
     {
-        if (binop->operation() == '/')
-            assert(binop->right() != 0);
         return new Number(binop->evaluate());
     }
     Expression* transformFunctionCall(FunctionCall const* fcall)
     {
-        if (fcall->name() == "sqrt")
-            assert(fcall->arg()->evaluate() >= 0);
         return new Number(fcall->evaluate());
     }
     Expression* transformVariable(Variable const* var)
@@ -280,4 +283,7 @@ int main()
     FoldConstants FC;
     Expression* newExpr = callAbs->transform(&FC);
     std::cout << newExpr->evaluate();
+    double x1;
+    Number* n1;
+    CopySyntaxTree copy_n1;
 }

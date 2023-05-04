@@ -1,3 +1,5 @@
 ﻿  Lab 6 - Patterns + GIT.cpp
-E:\Флешка\5-6 семестр\ТРПО лабы\Лаб 6\Lab 6 - Patterns + GIT\Lab 6 - Patterns + GIT\Lab 6 - Patterns + GIT.cpp(89): warning C4715: BinaryOperation::evaluate: значение возвращается не при всех путях выполнения
-  Lab 6 - Patterns + GIT.vcxproj -> E:\Флешка\5-6 семестр\ТРПО лабы\Лаб 6\Lab 6 - Patterns + GIT\Debug\Lab 6 - Patterns + GIT.exe
+E:\Флешка\5-6 семестр\ТРПО лабы\Лаб 6\Lab6---Pattern-Visitor\Lab 6 - Patterns + GIT\Lab 6 - Patterns + GIT\Lab 6 - Patterns + GIT.cpp(286,12): warning C4101: x1: неиспользованная локальная переменная
+E:\Флешка\5-6 семестр\ТРПО лабы\Лаб 6\Lab6---Pattern-Visitor\Lab 6 - Patterns + GIT\Lab 6 - Patterns + GIT\Lab 6 - Patterns + GIT.cpp(287,13): warning C4101: n1: неиспользованная локальная переменная
+E:\Флешка\5-6 семестр\ТРПО лабы\Лаб 6\Lab6---Pattern-Visitor\Lab 6 - Patterns + GIT\Lab 6 - Patterns + GIT\Lab 6 - Patterns + GIT.cpp(93): warning C4715: BinaryOperation::evaluate: значение возвращается не при всех путях выполнения
+  Lab 6 - Patterns + GIT.vcxproj -> E:\Флешка\5-6 семестр\ТРПО лабы\Лаб 6\Lab6---Pattern-Visitor\Lab 6 - Patterns + GIT\Debug\Lab 6 - Patterns + GIT.exe

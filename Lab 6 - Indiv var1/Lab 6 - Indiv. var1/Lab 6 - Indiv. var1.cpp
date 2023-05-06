@@ -1,15 +1,4 @@
-﻿#include <iostream>
-#include <cassert>
-#include <string>
-
-struct Student;
-struct Professor;
-
-struct Person
-{
-public:
-    virtual ~Person()
-    {}
+﻿    {}
 };
 
 
